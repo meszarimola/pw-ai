@@ -1,8 +1,17 @@
+language: "en-US"
+early_access: false
+
+tone_instructions: "Balanced reviews. Focus on critical issues: TDD-first, >=95% coverage, strict TS (no any), security (no secrets, proper auth), clean commits, and performance."
+
 reviews:
-  enable_auto_review: true
-  comment_summary: true
-  max_comments: 15
+  profile: "chill"  # Balanced reviews to reduce review fatigue
+  request_changes_workflow: true  # Allow CodeRabbit to approve when issues resolved
+  high_level_summary: true
+  poem: false  # No poems per your no-emoji policy
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: true  # Review drafts to catch issues early
   review_scope: pull_requests
-  languages:
-    - python
-    - javascript
+  comment_summary: true
