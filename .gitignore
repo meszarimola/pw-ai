@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+
+# Playwright reports & traces
+playwright-report/
+test-results/
+trace.zip
+*.zip
+
+# Screenshots & videos
+*.png
+*.jpg
+*.jpeg
+*.webm
+*.mp4
+
+# Environment & local settings
+.env
+.env.local
+.env.test
+.env.development
+.env.production
+
+# Logs
+logs/
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# TypeScript build output
+dist/
+out/
+build/
+
+# Coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Lock file (optional – keep if you want reproducible builds)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
