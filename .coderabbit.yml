@@ -1,0 +1,8 @@
+reviews:
+  enable_auto_review: true
+  comment_summary: true
+  max_comments: 15
+  review_scope: pull_requests
+  languages:
+    - python
+    - javascript
