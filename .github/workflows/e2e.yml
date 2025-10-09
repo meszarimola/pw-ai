@@ -26,7 +26,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test --reporter=html
+        run: npx playwright test
         env:
           CI: true
 
@@ -38,3 +38,14 @@ jobs:
           path: playwright-report
           if-no-files-found: ignore
 
+      - name: Generate Allure Report
+        if: always()
+        run: npx allure generate --clean allure-results -o allure-report
+
+      - name: Upload Allure HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+          if-no-files-found: ignore
