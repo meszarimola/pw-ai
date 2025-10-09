@@ -6,8 +6,6 @@ playwright-report/
 test-results/
 trace.zip
 *.zip
-allure-results/
-allure-report/
 
 # Screenshots & videos
 *.png

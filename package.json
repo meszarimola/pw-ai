@@ -1,25 +1,20 @@
-﻿{
-    "name":  "pw-ai",
-    "version":  "1.0.0",
-    "description":  "",
-    "main":  "index.js",
-    "scripts":  {
-                    "test":  "echo \"Error: no test specified\" \u0026\u0026 exit 1",
-                    "test:e2e":  "playwright test",
-                    "test:e2e:ui":  "playwright test --ui",
-                    "test:e2e:headed":  "playwright test --headed --project=chromium",
-                    "test:e2e:debug":  "playwright test --debug",
-                    "report:allure":  "allure generate --clean allure-results -o allure-report",
-                    "open:allure":  "allure open allure-report"
-                },
-    "keywords":  [
-
-                 ],
-    "author":  "",
-    "license":  "ISC",
-    "devDependencies":  {
-                            "@playwright/test":  "^1.56.0",
-                            "allure-playwright":  "^2.13.0",
-                            "allure-commandline":  "^2.29.0"
-                        }
+{
+  "name": "pw-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed --project=chromium",
+    "test:e2e:debug": "playwright test --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0"
+  }
 }
+
